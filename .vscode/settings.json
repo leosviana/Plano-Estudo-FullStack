@@ -1,0 +1,6 @@
+{
+    "workbench.editor.autoLockGroups": {
+        "markdown-preview-enhanced": true,
+        "mainThreadWebview-markdown.preview": true
+    }
+}
