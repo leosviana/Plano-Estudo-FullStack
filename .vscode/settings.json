@@ -1,6 +1,7 @@
 {
     "workbench.editor.autoLockGroups": {
         "markdown-preview-enhanced": true,
-        "mainThreadWebview-markdown.preview": true
+        "mainThreadWebview-markdown.preview": true,
+        "jupyter-notebook": true
     }
 }
