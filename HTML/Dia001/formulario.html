@@ -30,21 +30,21 @@
 
     <!-- SCRIPT PARA EXIBIR O POPUP -->
     <script>
-        document.getElementById('formulario').addEventListener('submit', function(event){
-            event.preventDefault();
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+      event.preventDefault(); // impede recarregamento
 
-            const nome = document.getElementById('nome').value;
-            const email = document.getElementById('email').value;
-            const mensagem = document.getElementById('mensagem').value;
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const mensagem = document.getElementById('mensagem').value;
 
-            alert(
-                `Dados enviados:\n` +
-                `Nome: ${nome}\n` +
-                `E-mail: ${email}\n` +
-                `Mensagem: ${mensagem}\n`
-            );
-        });
-    </script>
+      alert(
+        `Dados enviados:\n` +
+        `Nome: ${nome}\n` +
+        `Email: ${email}\n` +
+        `Mensagem: ${mensagem}`
+      );
+    });
+  </script>
     
 </body>
 </html>
