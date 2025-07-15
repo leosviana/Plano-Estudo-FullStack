@@ -25,37 +25,57 @@
         <option value="C++">
         <option value="Java">
         <option value="Python">
-    </datalist>
+    </datalist><br><br>
 
     <!-- EXERCÍCIO: FORMULÁRIO -->
-    <p>FORMULÁRIO</p>
-    <form>
-    <label>Nome:</label>
-    <input type="text" id="nome" minlength="3"><br><br>
+    <p>FORMULÁRIO DE CADASTRO</p>
+    <form id="formulario">
+        <label>Nome:</label>
+        <input type="text" id="nome" minlength="3"><br>
 
-    <label>Email:</label>
-    <input type="email" id="email"><br><br>
+        <label>Email:</label>
+        <input type="email" id="email"><br>
 
-    <label>Frutas favoritas:</label><br>
-    <label><input type="checkbox" name="frutas" value="Uva">Uva</label><br>
-    <label><input type="checkbox" name="frutas" value="Laranja">Laranja</label><br>
-    <label><input type="checkbox" name="frutas" value="Morango">Morango</label><br><br>
+        <label>Frutas favoritas:</label><br>
+        <label><input type="checkbox" name="frutas" value="Uva">Uva</label><br>
+        <label><input type="checkbox" name="frutas" value="Laranja">Laranja</label><br>
+        <label><input type="checkbox" name="frutas" value="Morango">Morango</label><br>
 
-    <label>Genero:</label>
-    <label><input type="radio" name="genero" value="masculino">Masculino</label>
-    <label><input type="radio" name="genero" value="feminino">Feminino</label>
-    <label><input type="radio" name="genero" value="outro">Outro</label><br><br>
+        <label>Genero:</label>
+        <label><input type="radio" name="genero" value="masculino">Masculino</label>
+        <label><input type="radio" name="genero" value="feminino">Feminino</label>
+        <label><input type="radio" name="genero" value="outro">Outro</label><br>
 
-    <label>Cidade:</label>
-    <input list="cidades" name="cidades" id="cidades">
-    <datalist id="cidades">
-        <option value="Ribeirão Preto">
-        <option value="Sertãozinho">
-        <option value="Cravinhos">
-    </datalist>
+        <label>Cidade:</label>
+        <input list="cidades" name="cidades" id="cidades">
+        <datalist id="cidades">
+            <option value="Ribeirao Preto">
+            <option value="Sertaozinho">
+            <option value="Cravinhos">
+        </datalist>
 
-    <button type="submit">ENVIAR</button>
+        <button type="submit">ENVIAR</button>
     </form>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const frutas = document.getElementById('frutas').value;
+            const genero = document.getElementById('genero').value;
+            const cidade = document.getElementById('cidade').value;
+
+            alert(
+                `Dados enviados:\n` +
+                `Nome: ${nome}\n` +
+                `Email: ${email}\n` +
+                `Frutas: ${frutas}\n` +
+                `Cidade: ${cidades}\n`
+            );
+        });
+    </script>
     
 </body>
 </html>
