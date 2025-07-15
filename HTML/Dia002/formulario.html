@@ -6,12 +6,26 @@
     <title>FORMULÁRIO SIMPLES DE CONTATO</title>
 </head>
 <body>
-    <!-- Pode ser marcado varias opções -->
+    <!-- CHECKBOX -> Pode ser marcado varias opções -->
     <p>Quais frutas você gosta?</p>
     <label><input type="checkbox" name="frutas" value="maça">Maça</label><br>
     <label><input type="checkbox" name="frutas" value="banana">Banana</label><br>
     <label><input type="checkbox" name="frutas" value="laranja">Laranja</label>
+
+    <!-- RADIO BUTTONS -> Pode ser marcado apenas uma opção -->
+     <label><input type="radio" name="genero" value="masculino">Masculino</label><br>
+     <label><input type="radio" name="genero" value="feminino">Feminino</label><br>
+     <label><input type="radio" name="genero" value="outro">Outro</label><br>
     
+    <!-- <datalist> Lista de sugestões automáticas -->
+    <label for="linguagem">Linguagem preferida:</label><br>
+    <input list="linguagens" id="linguagens" name="linguagens">
+    <datalist id="linguagens">
+        <option value="JavaScript">
+        <option value="C++">
+        <option value="Java">
+        <option value="Python">
+    </datalist>
     
 </body>
 </html>
