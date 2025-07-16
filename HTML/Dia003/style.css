@@ -8,6 +8,20 @@ body{
     background-color: #f4f4f4;
 }
 
+/* MOBILE FIRST - Estilo padrão (celular) */
 .caixa{
     width: 100%;
+    background: steelblue;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+@media (min-width: 768px){
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+    
 }
