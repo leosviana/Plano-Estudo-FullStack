@@ -6,27 +6,6 @@
     <title>FORMULÁRIO SIMPLES DE CONTATO</title>
 </head>
 <body>
-    <!-- CHECKBOX -> Pode ser marcado varias opções -->
-    <p>Quais frutas você gosta?</p>
-    <label><input type="checkbox" name="frutas" value="maça">Maça</label><br>
-    <label><input type="checkbox" name="frutas" value="banana">Banana</label><br>
-    <label><input type="checkbox" name="frutas" value="laranja">Laranja</label>
-
-    <!-- RADIO BUTTONS -> Pode ser marcado apenas uma opção -->
-     <label><input type="radio" name="genero" value="masculino">Masculino</label><br>
-     <label><input type="radio" name="genero" value="feminino">Feminino</label><br>
-     <label><input type="radio" name="genero" value="outro">Outro</label><br>
-    
-    <!-- <datalist> Lista de sugestões automáticas -->
-    <label for="linguagem">Linguagem preferida:</label><br>
-    <input list="linguagens" id="linguagens" name="linguagens">
-    <datalist id="linguagens">
-        <option value="JavaScript">
-        <option value="C++">
-        <option value="Java">
-        <option value="Python">
-    </datalist><br><br>
-
     <!-- EXERCÍCIO: FORMULÁRIO -->
     <p>FORMULÁRIO DE CADASTRO</p>
     <form id="formulario">
@@ -36,16 +15,19 @@
         <label>Email:</label>
         <input type="email" id="email"><br>
 
+        <!-- CHECKBOX -> Pode ser marcado varias opções -->
         <label>Frutas favoritas:</label><br>
         <label><input type="checkbox" name="frutas" value="Uva">Uva</label><br>
         <label><input type="checkbox" name="frutas" value="Laranja">Laranja</label><br>
         <label><input type="checkbox" name="frutas" value="Morango">Morango</label><br>
 
+        <!-- RADIO BUTTONS -> Pode ser marcado apenas uma opção -->
         <label>Genero:</label>
         <label><input type="radio" name="genero" value="masculino">Masculino</label>
         <label><input type="radio" name="genero" value="feminino">Feminino</label>
         <label><input type="radio" name="genero" value="outro">Outro</label><br>
 
+        <!-- <datalist> Lista de sugestões automáticas -->
         <label>Cidade:</label>
         <input list="cidades" name="cidades" id="cidades">
         <datalist id="cidades">
@@ -64,12 +46,15 @@
             const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
             const frutasSelecionadas = Array.from(document.querySelectorAll('input[name="frutas"]:checked'))
-                                            .map(el => el.value)
-                                            .join(', ');
+                                       checkboxesMarcados.forEach(checkbox =>{
+                                       console.log(checkbox.value);
+                                       })                                
+            //.map(el => el.value)
+                                            //.join(', ');
             const genero = document.querySelector('input[name=genero]:checked')?.value || '';
             const cidades = document.getElementById('cidades').value;
 
-            //console.log("nome: " + nome);
+            //console.log("frutas marcadas: " + nome);
 
             alert(
                 `Dados enviados:\n` +
