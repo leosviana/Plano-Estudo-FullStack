@@ -46,11 +46,10 @@
             const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
             const frutasSelecionadas = Array.from(document.querySelectorAll('input[name="frutas"]:checked'))
-                                       frutasSelecionadas.forEach(checkbox =>{
-                                       console.log(checkbox.value);
+                                       .map(checkbox => checkbox.value).join(', '); //Transforma array de inputs em array de string com valores
+                                       frutasSelecionadas.forEach(checkbox =>{ //Exibe os valores marcados do checkbox no console
+                                         console.log(checkbox.value);
                                        })                                
-            //.map(el => el.value)
-                                            //.join(', ');
             const genero = document.querySelector('input[name=genero]:checked')?.value || '';
             const cidades = document.getElementById('cidades').value;
 
