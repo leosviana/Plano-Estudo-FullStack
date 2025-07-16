@@ -63,17 +63,19 @@
 
             const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
-            const frutas = document.getElementById('frutas').value;
-            const genero = document.getElementById('genero').value;
-            const cidades = document.getElementById('cidade').value;
+            const frutasSelecionadas = Array.from(document.querySelectorAll('input[name="frutas"]:checked'))
+                                            .map(el => el.value)
+                                            .join(', ');
+            const genero = document.querySelector('input[name=genero]:checked')?.value || '';
+            const cidades = document.getElementById('cidades').value;
 
-            console.log("nome: " + nome);
+            //console.log("nome: " + nome);
 
             alert(
                 `Dados enviados:\n` +
                 `Nome: ${nome}\n` +
                 `Email: ${email}\n` +
-                `Frutas: ${frutas}\n` +
+                `Frutas: ${frutasSelecionadas}\n` +
                 `Cidade: ${cidades}\n`
             );
         });
