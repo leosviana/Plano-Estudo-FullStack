@@ -47,9 +47,9 @@
             const email = document.getElementById('email').value;
             const frutasSelecionadas = Array.from(document.querySelectorAll('input[name="frutas"]:checked'))
                                        .map(checkbox => checkbox.value).join(', '); //Transforma array de inputs em array de string com valores
-                                       frutasSelecionadas.forEach(checkbox =>{ //Exibe os valores marcados do checkbox no console
+                                       /*frutasSelecionadas.forEach(checkbox =>{ //Exibe os valores marcados do checkbox no console
                                          console.log(checkbox.value);
-                                       })                                
+                                       })   */                             
             const genero = document.querySelector('input[name=genero]:checked')?.value || '';
             const cidades = document.getElementById('cidades').value;
 
