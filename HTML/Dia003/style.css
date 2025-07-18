@@ -8,12 +8,9 @@ body{
     background-color: #f4f4f4;
 }
 
-.caixa{
-    width: 100%;
-}
-
 /* MOBILE FIRST - Estilo padrão (celular) */
 .caixa{
+    width: 100%;
     background: steelblue;
     color: white;
     padding: 20px;
@@ -25,11 +22,11 @@ body{
 @media (min-width: 768px){
     .container{
         display: flex;
-        gap: 20px;
+        gap: 20px; /* Distancia entre os elementos do container */
     }
 
     .caixa{
-        flex: 1;
+        flex: 1; /* Deixa todos os elementos do mesmo comprimento, independente do seu conteudo */
         font-size: 20px;
     }    
 }
