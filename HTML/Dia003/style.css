@@ -8,9 +8,12 @@ body{
     background-color: #f4f4f4;
 }
 
-/* MOBILE FIRST - Estilo padrão (celular) */
 .caixa{
     width: 100%;
+}
+
+/* MOBILE FIRST - Estilo padrão (celular) */
+.caixa{
     background: steelblue;
     color: white;
     padding: 20px;
