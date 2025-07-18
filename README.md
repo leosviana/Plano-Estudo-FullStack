@@ -13,3 +13,5 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
   DIA 3:  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia003  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia003
+
+  DIA 4: SEO & Acessibilidade
