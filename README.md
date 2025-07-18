@@ -1,7 +1,7 @@
 # Plano-Estudo-FullStack
 Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
 
-#HTML
+##### HTML #####
   DIA 1:
     ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia001
     FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia001/formulario.html
