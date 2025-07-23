@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Semântica HTML5</title>
 </head>
 <body>
+    <header> <!-- Cabeçalho da página ou sessão -->
+        <h1>Blog do Léo Dev</h1>
+    </header>
+    <nav> <!-- Área de navegação com links principais -->
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main> <!-- Conteúdo principal da página (apenas 1 por página) -->
+        <article> <!-- Artigos que são conteudos independentes (posts de blog, comentários, notícias...) -->
+            <h2>Como usar HTML Semântico</h2>
+            <section> <!-- Divisão temática dentro de um main, article -->
+                <p>O HTML trouxe novas tags...</p>
+            </section>
+        </article>
+
+        <aside> <!-- Conteudo relacionado mas não principal (barra lateral, anuncios) -->
+            <h3>Dica rápida</h3>
+            <p>Use sempre "main" apenas uma vez!</p>
+        </aside>
+
+        <footer> <!-- Rodapé da página ou de uma seção -->
+            <p>Escrito por Léo Dev - Todos os direitos reservados.</p>
+        </footer>
+    </main>
     
 </body>
 </html>
