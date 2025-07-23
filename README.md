@@ -10,10 +10,15 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia002  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia002/formulario.html
 
-  DIA 3: Responsividade – @media, breakpoints, design mobile-first  
+  DIA 3: Semântica HTML5  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia003  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia003/index.html
 
   DIA 4: SEO & Acessibilidade  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia004  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia004/index.html
+
+##CSS
+  DIA 3: Responsividade – @media, breakpoints, design mobile-first  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia003  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia003/index.html
