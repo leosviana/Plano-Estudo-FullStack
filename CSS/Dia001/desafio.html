@@ -5,30 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio</title>
     <style>
-        .cabecalho{
-            background: #ffc4c4;
+        header{
+            background: #addaff;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 0;
-        }
+            font-family: sans-serif;
+            padding: 10px 10px;
+        }        
         img{
             height: 100px;
             width: 100px;
-            background: #50d1f8;
-            border-radius: 20px;
-            
+            border-radius: 20px;    
+            margin: 5px;        
+        }
+        .menu{
+            background: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 7px;
+        }
+        nav a{
+            text-decoration: none;
+            margin: 20px;
         }
     </style>
 </head>
 <body>
-    <header class="cabecalho">
+    <header>
         <div class="imagem">
             <img src="./logo-exemplo.jpg" alt="Logo do cabeçalho">
         </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Projetos</a>
+        <nav class="menu">
+            <a href="#">Home</a> |
+            <a href="#">Projetos</a> |
             <a href="#">Contato</a>
         </nav>
     </header>
