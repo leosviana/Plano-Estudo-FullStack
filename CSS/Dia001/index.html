@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox – containers e alinhamento</title>
+    <title>Flexbox – containers e alinhamento</title>   
+    <style>
+        .container{
+            display: flex;
+            background: #8173fc;
+            height: 200px;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .item{
+            background: #045e9b;
+            padding: 30px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style> 
 </head>
 <body>
+    <div class="container">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </div>
     
 </body>
 </html>
