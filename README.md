@@ -23,9 +23,13 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
 ## CSS
   DIA 1: Flexbox – containers e alinhamento  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia001  
-    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia001/index.html
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia001/index.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia001/desafio.html
 
-
+  DIA 2: CSS Grid – estrutura de colunas/linhas, posicionamento de itens simples  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia002  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia002/index.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia002/produtos.html
 
   DIA 3: Responsividade – @media, breakpoints, design mobile-first  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia003  
