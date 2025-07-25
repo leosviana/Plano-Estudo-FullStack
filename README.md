@@ -13,11 +13,12 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
   DIA 3: Semântica HTML5  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia003  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia003/index.html  
-    - APRESENTACAO PESSOAL SIMPLES: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia003/apresentacaoPessoal.html
 
   DIA 4: SEO & Acessibilidade  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia004  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia004/index.html
+
+  DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Desafio.html
 
 ## CSS
   DIA 1: Flexbox – containers e alinhamento  
