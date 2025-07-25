@@ -25,6 +25,8 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia001  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia001/index.html
 
+
+
   DIA 3: Responsividade – @media, breakpoints, design mobile-first  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia003  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia003/index.html
