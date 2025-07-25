@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
     <style>
-        .div1{ background: #4535ff; }
-        .div2{ background: #0012b6; }
-        .div3{ background: #002369; }
-        .div4{ background: #ff3535; }
-        .div5{ background: #ff0000; }
-        .div6{ background: #710000; }
         .grid{
-            display: grid;
+            display: grid; /* Coloca os filhos em formato de grid(tabela) com linhas e colunas */
+            grid-template-columns: 1fr 1fr 1fr; /* Cria 3 colunas para as div / "fr" é a fração de espaço */
+            grid-template-rows: 150px 150px; /* Define o tamanho das linhas. Linha 1: 100 px / Linha 2: 200px */
+            gap: 10px; /* Espaço entre as div filhas */
+            padding: 10px; /* Espaço em torno da div pai */
+            background: #eee; /* Cor de fundo da div pai */
+        }
+        .grid div{
+            background: #3498db; /* Corde fundo de todas as divs */
+            color: white; /* Cor do texto branco */
+            font-size: 20px;
+            display: flex; /* Deixar as colunas flexiveis */
         }
     </style>
 </head>
