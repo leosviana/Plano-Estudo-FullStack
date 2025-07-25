@@ -11,9 +11,16 @@
         }
         .container{
             background: #b6dcff;
+            color: #000;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            /*grid-template-rows: 150px;*/
+            grid-template-columns: repeat(2, 1fr); /* Dividido em 2 colunas e repetir o mesmo tamanho de 1fr nas linhas */
+            gap: 10px;
+            padding: 10px;
+        }
+        .container div{
+            background: #f0f4ff;
+            display: flex;
+            align-items: center;
         }
     </style>
 </head>
