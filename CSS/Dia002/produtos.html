@@ -13,14 +13,19 @@
             background: #b6dcff;
             color: #000;
             display: grid;
+            align-items: flex-start;
             grid-template-columns: repeat(2, 1fr); /* Dividido em 2 colunas e repetir o mesmo tamanho de 1fr nas linhas */
             gap: 10px;
             padding: 10px;
         }
-        .container div{
-            background: #f0f4ff;
+        .card{
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Manter as elementos dentro do card à esquerda */
+            gap: 15px; /* Espaço de 15px */
+        }        
+        .info{
+            display: flex;
+            flex-direction: column; /* Quebrando as informações em colunas */
         }
     </style>
 </head>
@@ -29,35 +34,47 @@
         <h1>PRODUTOS E-COMMERCE</h1>
     </div>
     <div class="container">
-        <div>
+        <div class="card">
             <img src="./imagens/p1.png" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do produto 1...</p>
+            <div class="info">
+              <h2>Produto 1</h2>
+              <p>Descrição do produto 1...</p>
+            </div>
         </div>
-        <div>
+        <div class="card">
             <img src="./imagens/p2.png" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do produto 2...</p>
+            <div class="info">
+              <h2>Produto 2</h2>
+              <p>Descrição do produto 2...</p>
+            </div>
         </div>
-        <div>
+        <div class="card">
             <img src="./imagens/p3.png" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do produto 3</p>
+            <div class="info">
+              <h2>Produto 3</h2>
+              <p>Descrição do produto 3...</p>
+            </div>
         </div>
-        <div>
+        <div class="card">
             <img src="./imagens/p4.png" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do produto 4</p>
+            <div class="info">
+              <h2>Produto 4</h2>
+              <p>Descrição do produto 4...</p>
+            </div>
         </div>
-        <div>
+        <div class="card">
             <img src="./imagens/p5.png" alt="Produto 5">
-            <h2>Produto 5</h2>
-            <p>Descrição do produto 5</p>            
+            <div class="info">
+              <h2>Produto 5</h2>
+              <p>Descrição do produto 5...</p>
+            </div>        
         </div>
-        <div>
+        <div class="card">
             <img src="./imagens/p6.png" alt="Produto 6">
-            <h2>Produto 6</h2>
-            <p>Descrição do produto 6</p>
+            <div class="info">
+              <h2>Produto 6</h2>
+              <p>Descrição do produto 6...</p>
+            </div>
         </div>
 
     </div>
