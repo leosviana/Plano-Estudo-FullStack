@@ -34,3 +34,7 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
   DIA 3: Responsividade – @media, breakpoints, design mobile-first  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia003  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia003/index.html
+  
+  Dia 4: Pseudo-classes e transições – :hover, :focus, transition, animation  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia004  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia004/index.html
