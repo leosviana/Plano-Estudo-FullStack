@@ -52,6 +52,22 @@
             height: 300px; /* Tamanho final */
         }
 
+        .botao4{
+            width: 100px; /* Tamanho inicial */
+            height: 50px;
+            background: #005c9a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition-timing-function: linear;
+        }
+        .botao4:hover{
+            width: 150px;
+            height: 100px;
+        }
+
         input:focus{ /* Altera elemento de campo de texto quando for selecionado */
             outline: none;
             border: 5px solid #8e44ad; /* Colocar borda roxa de 5px */
@@ -84,20 +100,17 @@
 <body>
     <h2>Interatividade com o CSS</h2>
 
-    <p>Escalar tamanho de botão e mudar de cor:</p>
-    <button class="botao1">Transition</button><br><br>
-
-    <p>Aumenta o tamanho do botão com uma demora de 2 segundos para iniciar:</p>
-    <button class="botao2">Transition-delay</button><br><br>
+    <p>Aumenta a largura do botão / constante / delay 2 seg. / Tempo total de 3 seg.:</p>
+    <button class="botao1">Botão 1</button><br><br>
 
     <p>Escalar tamanho de botão e mudar de cor:</p>
-    <button class="botao3">Transition-duration</button><br><br>
+    <button class="botao2">Botão 2</button><br><br>
 
-    <p>Escalar tamanho de botão e mudar de cor:</p>
-    <button class="botao4">Transition-property</button><br><br>
+    <p>Aumenta altura do botão:</p>
+    <button class="botao3">Botão 3</button><br><br>
 
-    <p>Escalar tamanho de botão e mudar de cor:</p>
-    <button class="botao5">Transition-timing-function</button><br><br>
+    <p>Aumenta largura x altura do botão:</p>
+    <button class="botao4">Botão 4</button><br><br>
 
     <p>Ao clicar dentro do campo de texto, a borda e o centro muda de cor:</p>
     <input type="text" placeholder="Foca aqui no imput"><br><br>
