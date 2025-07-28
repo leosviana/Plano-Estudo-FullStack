@@ -9,15 +9,26 @@
             color: white;
             padding: 15px 25px;
             border: none;
-            font-size: 18px;
             border-radius: 8px;
             cursor: pointer;
+            font-size: 18px;
             transition: background-color 3s, transform 3s; /* Utilizando transição com 2 valores de propriedade */
         }
         .botao1:hover{
             background-color: #2ecc71;
             transform: scale(1.1);
         }
+
+        .div2{
+            background: #005c9a;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
         input:focus{ /* Altera elemento de campo de texto quando for selecionado */
             outline: none;
             border: 5px solid #8e44ad; /* Colocar borda roxa de 5px */
@@ -50,11 +61,11 @@
 <body>
     <h2>Interatividade com o CSS</h2>
 
-    <button class="botao1">Transition</button>
-    <button class="botao2">Transition-delay</button>
-    <button class="botao3">Transition-duration</button>
-    <button class="botao4">Transition-property</button>
-    <button class="botao5">Transition-timing-function</button>
+    <button class="botao1">Transition</button><br><br>
+    <button class="div2">Transition-delay</button><br><br>
+    <div class="div3">Transition-duration</div><br><br>
+    <div class="div4">Transition-property</div><br><br>
+    <div class="div5">Transition-timing-function</div><br><br>
     <input type="text" placeholder="Foca aqui no imput"><br><br>
     <div class="spinner"></div>
     
