@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .botao{
+        .botao1{
             background: #3498db;
             color: white;
             padding: 15px 25px;
@@ -12,39 +12,51 @@
             font-size: 18px;
             border-radius: 8px;
             cursor: pointer;
-            transition: background-color 3s, transform 3s; /* UTILIZANDO A TRANSIÇÃO AQUI */
+            transition: background-color 3s, transform 3s; /* Utilizando transição com 2 valores de propriedade */
         }
-        .botao:hover{
+        .botao1:hover{
             background-color: #2ecc71;
             transform: scale(1.1);
         }
-        input:focus{ /* Quando for selecionado o campo de texto */
+        input:focus{ /* Altera elemento de campo de texto quando for selecionado */
             outline: none;
             border: 5px solid #8e44ad; /* Colocar borda roxa de 5px */
             background-color: yellow; /* Pintar o fundo de amarelo */
         }
-        .spinner{
+        .spinner{ /* Animação de um circulo de carregamento infinito */
             width: 50px;
             height: 50px;
             margin-top: 30px;
             border: 5px solid #ccc;
             border-top: 5px solid #8e44ad;
             border-radius: 50%;
-            animation: girar 1s linear infinite;
+            animation: girar 4s linear infinite; /* animação que aplica o roteiro de "girar" */
+              /* girar: É o nome da animação */
+              /* 4s: Velocidade de 4 segundos */
+              /* linear: Velocidade constante */
+              /* infinite: A animação se repete infinitamente */ 
         }
-        @keyframes girar{
-            0%{ transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        @keyframes girar{ /* Roteiro de animação a ser feita */
+            0%{ transform: rotate(0deg); } 
+              /* Inicio da animação o tempo é 0% */
+              /* tranform: rotate(0deg): começa sem rotação */
+            100% { transform: rotate(360deg); } 
+              /* Fim da animação o tempo é 100% */
+              /* transform: rotate(360deg): O elemento gira totalmente */ 
         }
     </style>
-    <title>Pseudo-classes e transições</title>
+    <title>Pseudo-classes, transições e animação</title>
 </head>
 <body>
     <h2>Interatividade com o CSS</h2>
 
-    <button class="botao">Passar o mouse</button>
+    <button class="botao1">Transition</button>
+    <button class="botao2">Transition-delay</button>
+    <button class="botao3">Transition-duration</button>
+    <button class="botao4">Transition-property</button>
+    <button class="botao5">Transition-timing-function</button>
     <input type="text" placeholder="Foca aqui no imput"><br><br>
-    <div class="Spinner"></div>
+    <div class="spinner"></div>
     
 </body>
 </html>
