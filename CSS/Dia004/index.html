@@ -7,7 +7,6 @@
         .botao1{
             background: #3498db;
             color: white;
-            padding: 15px 25px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -20,19 +19,32 @@
         }
 
         .botao2{
-            width: 150px; /* Tamanho de inicio */
+            width: 150px; /* Tamanho inicial */
             background: #005c9a;
             color: white;
-            padding: 15px 25px;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             font-size: 18px;
             transition: width 3s; /* Transição de tamanho em 3 segundos */
-            transition-delay: 1s; /* Demora inicial de 2 segundos */
+            transition-delay: 2s; /* Demora inicial de 2 segundos */
         }
         .botao2:hover{
-            width: 200px; /* Tamanho de final */
+            width: 200px; /* Tamanho final */
+        }
+
+        .botao3{
+            height: 150px; /* Tamanho inicial */
+            background: #005c9a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition-duration: 5s; /* Duração de todo o efeito de transição */
+        }
+        .botão3:hover{
+            height: 300px; /* Tamanho final */
         }
 
         input:focus{ /* Altera elemento de campo de texto quando for selecionado */
@@ -67,11 +79,22 @@
 <body>
     <h2>Interatividade com o CSS</h2>
 
+    <p>Escalar tamanho de botão e mudar de cor:</p>
     <button class="botao1">Transition</button><br><br>
+
+    <p>Aumenta o tamanho do botão com uma demora de 2 segundos para iniciar:</p>
     <button class="botao2">Transition-delay</button><br><br>
-    <div class="div3">Transition-duration</div><br><br>
-    <div class="div4">Transition-property</div><br><br>
-    <div class="div5">Transition-timing-function</div><br><br>
+
+    <p>Escalar tamanho de botão e mudar de cor:</p>
+    <button class="botao3">Transition-duration</button><br><br>
+
+    <p>Escalar tamanho de botão e mudar de cor:</p>
+    <button class="botao4">Transition-property</button><br><br>
+
+    <p>Escalar tamanho de botão e mudar de cor:</p>
+    <button class="botao5">Transition-timing-function</button><br><br>
+
+    <p>Ao clicar dentro do campo de texto, a borda e o centro muda de cor:</p>
     <input type="text" placeholder="Foca aqui no imput"><br><br>
     <div class="spinner"></div>
     
