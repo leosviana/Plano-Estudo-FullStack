@@ -5,20 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .botao1{
-            background: #3498db;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            transition: background-color 3s, transform 3s; /* Utilizando transição com 2 valores de propriedade */
-        }
-        .botao1:hover{
-            background-color: #2ecc71;
-            transform: scale(1.1);
-        }
-
-        .botao2{
             width: 150px; /* Tamanho inicial */
             background: #005c9a;
             color: white;
@@ -26,11 +12,30 @@
             border-radius: 8px;
             cursor: pointer;
             font-size: 18px;
-            transition: width 3s; /* Transição de tamanho em 3 segundos */
+            transition-property: width; /* Transição de tamanho */
+            transition-duration: 3s; /* Duração da transição */
+            transition-timing-function: linear; /* Constante */
             transition-delay: 2s; /* Demora inicial de 2 segundos */
+            /* As propriedades acima também podem ser abreviado assim:
+               transition: width 2s linear 2s;
+            */
+        }
+        .botao1:hover{
+            width: 200px; /* Tamanho final */
+        }
+
+        .botao2{
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 3s transform 3s; /* Utilizando transição com 2 valores de propriedade */
         }
         .botao2:hover{
-            width: 200px; /* Tamanho final */
+            background-color: #2ecc71;
+            transform: scale(1.1);
         }
 
         .botao3{
