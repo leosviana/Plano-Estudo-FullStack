@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    background: #74fe89;
+}
+
+.logo{
+    width: 100px;
+    background: #d1f85d;
+}
+
+.container{
+    background: #2affe6;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card{
+    background: #0122f8;
+    width: 350px;
+    height: 300px;   
+}
+
+footer{
+    background: #230228;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes{
+    background: #bd38ff;
+    width: 30px;
+    height: 30px;
+}
