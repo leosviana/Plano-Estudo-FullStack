@@ -3,6 +3,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav{
@@ -37,9 +38,27 @@ header nav a:hover{
 
 .card{
     background: #0122f8;
-    width: 350px; 
+    width: 350px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
+    /*justify-content: center;*/
+    /*flex: 1;*/
+}
+/*
+.imagem{
+    background: #ff0707;
+    border-color: #ff0000;
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+}*/
+
+.botao{
+    background: #d21793;
+    display: flex;
+    justify-content: center;
+    margin-top: auto; /* Empurra o botão para o fim da div */    
 }
 
 footer{
