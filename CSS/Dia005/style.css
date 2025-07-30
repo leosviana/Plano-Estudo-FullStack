@@ -65,7 +65,7 @@ header nav a:hover{
     height: 200px;
     display: flex;
     align-items: center;
-   /* object-fit: cover;*/
+    justify-content: center;
 }
 
 .imagem img{
