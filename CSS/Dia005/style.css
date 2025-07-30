@@ -68,6 +68,11 @@ header nav a:hover{
    /* object-fit: cover;*/
 }
 
+.imagem img{
+    width: 250px;
+    height: 200px;
+}
+
 .divBotao{
     width: 60%; /* O botão oOcupa 60% do tamanho da div */
     border-radius: 6px; /* Borda do botão */
