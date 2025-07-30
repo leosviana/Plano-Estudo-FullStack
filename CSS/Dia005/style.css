@@ -28,6 +28,7 @@ body{
 header nav a{
     padding: 11px 20px;
     color: white;
+    text-decoration: none;
 }
 
 header nav a:hover{
