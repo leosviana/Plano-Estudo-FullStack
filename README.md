@@ -41,4 +41,4 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
 
   DESAFIO: Landing Page de Serviços Web  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/CSS/Dia005  
-    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia005/Desafio.html
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/CSS/Dia005/desafio.html
