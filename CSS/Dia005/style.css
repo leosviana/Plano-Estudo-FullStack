@@ -60,13 +60,12 @@ header nav a:hover{
 
 .imagem{
     background: #ffffff;
-    /*border: 2px solid red;*/
     border-radius: 10px;
     width: 250px;
     height: 200px;
     display: flex;
     align-items: center;
-    object-fit: cover;
+   /* object-fit: cover;*/
 }
 
 .divBotao{
