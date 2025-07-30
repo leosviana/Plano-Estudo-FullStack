@@ -71,6 +71,8 @@ header nav a:hover{
 .imagem img{
     width: 250px;
     height: 200px;
+    object-fit: cover;   /* mantém proporção sem distorcer */
+    display: block;
 }
 
 .divBotao{
