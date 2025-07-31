@@ -18,7 +18,9 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia004  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia004/index.html
 
-  DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Desafio.html
+  DESAFIO: Apresentação Pessoal Simples  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/HTML/Dia005  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/HTML/Dia005/desafio.html
 
 ## CSS
   DIA 1: Flexbox – containers e alinhamento  
