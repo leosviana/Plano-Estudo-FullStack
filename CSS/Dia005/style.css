@@ -106,6 +106,7 @@ header nav a:hover{
 footer{
     background: #00013c;
     padding-top: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,6 +120,7 @@ footer{
     border-radius: 5px;
     margin: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* TABLET e acima */
@@ -134,9 +136,10 @@ footer{
     }
 }
 
-/* DESKTOK e acima */
+/* DESKTOP e acima */
 @media (min-width: 1024px){
     .card{
+        flex-direction: row;
         padding: 30px;
     }
 }
