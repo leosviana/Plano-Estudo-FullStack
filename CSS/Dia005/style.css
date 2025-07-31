@@ -121,6 +121,7 @@ footer{
     cursor: pointer;
 }
 
+/* TABLET e acima */
 @media (min-width: 768px){
     .container{
         display: flex;
@@ -129,5 +130,12 @@ footer{
     .card{
         flex: 1;
         font-size: 20px;
+    }
+}
+
+/* DESKTOK e acima */
+@media (min-width: 1024px){
+    .card{
+        padding: 30px;
     }
 }
