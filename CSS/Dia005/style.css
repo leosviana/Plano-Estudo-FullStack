@@ -45,7 +45,7 @@ header nav a:hover{
     display: flex;          
     flex: 1;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     padding: 50px;
 }
 
@@ -128,10 +128,13 @@ footer{
 @media (min-width: 768px){
     .container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
     }
     .card{
-        flex: 1;
+        flex: 1 1 calc(50% - 20px); /* 2 colunas */
+        box-sizing: border-box;
     }
 }
 
