@@ -44,7 +44,8 @@ header nav a:hover{
     background: #ffffff;
     display: flex;          
     flex: 1;
-    justify-content: center;
+    justify-content: center; /* Alinha os cards no centro horizontalmente */
+    align-items: center; /* Alinha os cards no centro verticalmente */
     flex-direction: column; /* muda para coluna quando for abaixo de 768px */
     padding: 50px;
 }
@@ -128,7 +129,6 @@ footer{
 @media (min-width: 768px){
     .container{
         display: flex;
-        align-items: center;
         flex-direction: row; /* muda para linha */
         flex-wrap: wrap;  /* quebra linha se não couber tudo */
         gap: 20px; /* espaçamento entre cards */
