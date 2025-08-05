@@ -45,7 +45,7 @@ header nav a:hover{
     display: flex;          
     flex: 1;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* muda para coluna quando for abaixo de 768px */
     padding: 50px;
 }
 
@@ -124,21 +124,22 @@ footer{
     text-decoration: none;
 }
 
-/* TABLET e acima */
+/* TABLET e acima de 768px */
 @media (min-width: 768px){
     .container{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
+        align-items: center;
+        flex-direction: row; /* muda para linha */
+        flex-wrap: wrap;  /* quebra linha se não couber tudo */
+        gap: 20px; /* espaçamento entre cards */
     }
 }
 
-/* DESKTOP e acima */
+/* DESKTOP e acima de 1024px */
 @media (min-width: 1024px){
     .container{
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: row; /* muda para linha */
+        flex-wrap: wrap;  /* quebra linha se não couber tudo */
     }
     .card{
         flex: 1;
