@@ -18,6 +18,11 @@
         <button type="submit">Enviar</button>
     </form>
 
+    <!-- TECLA PRESSIONADA -->
+     <h2>EVENTO: TECLA</h2>
+     <input type="text" id="campo" placeholder="Digite algo...">
+     <p id="resultado"></p>
+
      <script>
         //EVENTO: CLICK
         const botao = document.getElementById('botao');
@@ -31,6 +36,13 @@
             e.preventDefault();
             const nome = document.getElementById('nome').value;
             alert(`Nome enviado: ${nome}`);
+        });
+
+        //EVENTO: TECLA
+        const campo = document.getElementById('campo');
+        const resultado = document.getElementById('resultado');
+        campo.addEventListener('keyup', function(){
+            resultado.textContent = campo.value;
         });
      </script>
     
