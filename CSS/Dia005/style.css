@@ -141,6 +141,6 @@ footer{
 /* DESKTOP e acima */
 @media (min-width: 1024px){
     .card{
-        flex-direction: column;
+        flex: 1 1 calc(25% - 20px);
     }
 }
