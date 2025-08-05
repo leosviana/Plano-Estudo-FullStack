@@ -46,7 +46,7 @@ header nav a:hover{
     flex: 1;
     justify-content: center; /* Alinha os cards no centro horizontalmente */
     align-items: center; /* Alinha os cards no centro verticalmente */
-    flex-direction: column; /* muda para coluna quando for abaixo de 768px */
+    flex-direction: column; /* muda para coluna quando a tela for menor que 768px */
     padding: 50px;
 }
 
