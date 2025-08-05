@@ -40,9 +40,9 @@
 
         //EVENTO: TECLA
         const campo = document.getElementById('campo');
-        const resultado = document.getElementById('resultado');
-        campo.addEventListener('keyup', function(){
-            resultado.textContent = campo.value;
+        const resultado = document.getElementById('resultado'); 
+        campo.addEventListener('keyup', function(){ //Escuta quando o usuário solta uma tecla
+            resultado.textContent = campo.value; //Pega o valor digitado e mostra em tempo real no paragrafo
         });
      </script>
     
