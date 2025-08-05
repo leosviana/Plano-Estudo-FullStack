@@ -7,11 +7,30 @@
 </head>
 <body>
     <!-- CLIQUE -->
-     <button id="botao">Clique aqui!</button>
+    <h2>EVENTO: CLICK</h2>
+    <button id="botao">Clique aqui!</button>
+    <br><br>
+
+    <!-- FORMULARIO -->
+    <h2>EVENTO: SUBMIT</h2>
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <button type="submit">Enviar</button>
+    </form>
+
      <script>
+        //EVENTO: CLICK
         const botao = document.getElementById('botao');
         botao.addEventListener('click', function(){
             alert('Você clicou no botão!');
+        });
+
+        //EVENTO: FORMULARIO
+        const form = document.getElementById('formulario');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const nome = document.getElementById('nome').value;
+            alert(`Nome enviado: ${nome}`);
         });
      </script>
     
