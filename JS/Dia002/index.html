@@ -11,11 +11,16 @@
     <p>Função somar(2, 7)</p>
     <p id="somar"></p>
 
+    <!-- FUNÇÃO DE SETA (ARROW FUNCTION) -->
     <h2>FUNCAO DE SETA(ARROW FUNCTION)</h2>
     <p>CLASSICA: Funcao saudacao(nome){ return `Olá, ${nome}`; }</p>
     <p>MELHORADA: Funcao saudacao = (nome) => `Olá, ${nome}`;</p>
     <p id="texto"></p>
     <p id="texto2"></p>
+
+    <!-- FUNÇÃO DENTRO DE FUNÇÃO(CALLBACK) -->
+     <h2>FUNÇÃO DENTRO DE FUNÇÃO(CALLBACK)</h2>
+     <p id="multiplicacao"></p>
 
     <script>
         //FUNÇÃO COM PARAMETROS
@@ -31,12 +36,19 @@
         function saudacao(nome){
             return `CLASSICA: Olá, ${nome}`;
         }
-        msgTexto.textContent = saudacao("Leo");
+        msgTexto.textContent = saudacao("Fulano");
 
         //FUNÇÃO DE SETA (ARROW FUNCTION)
         const msgTexto2 = document.getElementById('texto2');
-        const data = (hoje) => `MELHORADA: Hoje é dia ${hoje}`;
-        msgTexto2.textContent = data("06/08/2025");
+        const saudacao2 = (nome2) => `MELHORADA: Olá, ${nome2}`;
+        msgTexto2.textContent = saudacao2("Ciclano");
+
+        //FUNÇÃO DENTRO DE FUNÇÃO (CALLBACK)
+        const calculo = document.getElementById('multiplicacao');
+        function executarOperacao(a, b, operacao){
+            const resultado = operacao(a, b);            
+        }
+        calculo.textContent = executarOperacao(5, 3, (x, y) => x * y);
 
 
     </script>
