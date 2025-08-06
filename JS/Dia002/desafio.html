@@ -7,6 +7,31 @@
 </head>
 <body>
     <h2>DESAFIO 002</h2>
+    <div class="container">
+        <div class="card">
+            <p id="titulo1">Produto 1</p>
+        </div>
+        <div class="card">
+            <p id="titulo2">Produto 2</p>
+        </div>
+        <div class="card">
+            <p id="titulo3">Produto 3</p>
+        </div>
+        <div class="card">
+            <p id="titulo4">Produto 4</p>
+        </div>
+    </div>
+
+    <script>
+        const produtoTitulo1 = document.getElementById('titulo1');
+        const anuncios = [
+            {titulo1: "Iphone 14"},
+            {titulo: "Tenis Nike"},
+            {titulo: "Sofá retratil"}
+        ]
+        produtoTitulo1.textContent = anuncios.titulo1;
+
+    </script>
     
 </body>
 </html>
