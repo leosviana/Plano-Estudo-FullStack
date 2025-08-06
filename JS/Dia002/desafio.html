@@ -25,11 +25,17 @@
     <script>
         const produtoTitulo1 = document.getElementById('titulo1');
         const anuncios = [
-            {titulo1: "Iphone 14"},
+            {titulo: "Iphone 14"},
             {titulo: "Tenis Nike"},
-            {titulo: "Sofá retratil"}
+            {titulo: "Sofá retratil"},
+            {titulo: "Smart TV 50"}
         ]
-        produtoTitulo1.textContent = anuncios.titulo1;
+        anuncios.forEach((item, index) => { //Exibindo os produtos no HTML conforme o array de anuncios
+            const elemento = document.getElementById(`titulo${index + 1}`);
+            if(elemento){
+                elemento.textContent = item.titulo;
+            }
+        })
 
     </script>
     
