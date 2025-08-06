@@ -19,7 +19,7 @@
     <!-- KEYUP - EVENTO DE PRESSIONAR UMA TECLA  -->
     <h2>EVENTO DE PRESSIONAR TECLA</h2>
     <input type="text" id="mensagem" placeholder="Digite uma mensagem...">
-    <p id="mostraMensagem"></p>
+    <p id="mostraContagem"></p>
 
     <!-- CLICK - EVENTO DE CLICAR EM UM BOTÃO -->
      <h2>EVENTO DE CLICAR EM UM BOTÃO</h2>
@@ -38,9 +38,10 @@
 
         //KEYUP - EVENTO DE PRESSIONAR UMA TECLA
         const mensagemInput = document.getElementById('mensagem');
-        const mostraMensagemInput = document.getElementById('mostraMensagem');
+        const contador = document.getElementById('mostraContagem');
         mensagemInput.addEventListener('keyup', function(){
-        mostraMensagemInput.textContent = mensagemInput.value;
+            const totalCaracteres = input.value.length; // Captura a quantidade total de caracteres do campo
+            contador.textContent = totalCaracteres;
         });
 
         //CLICK - EVENTO DE CLICAR EM UM BOTÃO
@@ -49,7 +50,7 @@
             nomeImput.value = '';
             resultado.textContent = '';
             mensagemInput.value = '';
-            mostraMensagemInput.textContent = '';
+            mostraContagemInput.textContent = '';
         })
     </script>
 
