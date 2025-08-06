@@ -6,6 +6,23 @@
     <title>Desafio</title>
 </head>
 <body>
-    
+    <h2>Digite uma mensagem</h2>
+
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Digite seu nome...">
+        <p id="resultado">Texto aparece aqui...</p>
+        <button type="submit">Enviar</button>
+
+    </form>
+    <script>
+        const nome = document.getElementById('nome');
+        const resultado = document.getElementById('resultado');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const nome = nome.value;
+            resultado.textContent = `Olá ${nome}! Seja bem vindo(a)!`;
+        })
+    </script>
+
 </body>
 </html>
