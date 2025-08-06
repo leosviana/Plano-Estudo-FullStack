@@ -6,15 +6,23 @@
     <title>Desafio</title>
 </head>
 <body>
-    <h2>Digite uma mensagem</h2>
+    <h2>Desafio</h2>
 
+    <!-- FORMULARIO - EVENDO DE ENVIAR FORMULARIO -->
+    <h2>EVENTO DE FORMULARIO</h2>
     <form id="formulario">
         <input type="text" id="nome" placeholder="Digite seu nome...">        
         <button type="submit">Enviar</button>
     </form>
     <p id="resultado">Texto aparece aqui...</p>
-    
+
+    <!-- KEYUP - EVENTO DE PRESSIONAR UMA TECLA  -->
+    <h2>EVENTO DE PRESSIONAR TECLA</h2>
+    <input type="text" id="mensagem" placeholder="Digite uma mensagem...">
+    <p id="mostraMensagem"></p>
+
     <script>
+        //FORMULARIO - EVENDO DE ENVIAR FORMULARIO
         const form = document.getElementById('formulario');
         const nomeImput = document.getElementById('nome');
         const resultado = document.getElementById('resultado');
@@ -23,6 +31,14 @@
             const nome = nomeImput.value;
             resultado.textContent = `Olá ${nome}! Seja bem vindo(a)!`;
         })
+
+        //KEYUP - EVENTO DE PRESSIONAR UMA TECLA
+        const mensagemImput = document.getElementById('mensagem');
+        const mostraMensagemImput = document.getElementById('mostraMensagemImput');
+
+        mensagemImput.addEventListener('keyup', function(){
+            mostraMensagemImput.textContent = mensagem.value;
+        });
     </script>
 
 </body>
