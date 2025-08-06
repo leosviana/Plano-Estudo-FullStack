@@ -40,7 +40,7 @@
         const mensagemInput = document.getElementById('mensagem');
         const contador = document.getElementById('mostraContagem');
         mensagemInput.addEventListener('keyup', function(){
-            const totalCaracteres = input.value.length; // Captura a quantidade total de caracteres do campo
+            const totalCaracteres = mensagemInput.value.length; // Captura a quantidade total de caracteres do campo
             contador.textContent = totalCaracteres;
         });
 
