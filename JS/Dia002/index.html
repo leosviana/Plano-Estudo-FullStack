@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <!-- FUNÇÃO COM PARAMETROS -->
+    <h2>FUNÇÃO COM PARAMETROS</h2>
+    <p>Função somar(2, 7)</p>
+    <p id="somar"></p>
+
+    <h2>FUNCAO DE SETA(ARROW FUNCTION)</h2>
+    <p>CLASSICA: Funcao saudacao(nome){ return `Olá, ${nome}`; }</p>
+    <p>MELHORADA: Funcao saudacao = (nome) => `Olá, ${nome}`;</p>
+    <p id="texto"></p>
+    <p id="texto2"></p>
+
+    <script>
+        //FUNÇÃO COM PARAMETROS
+        const somarInput = document.getElementById('somar');
+        function somar(a, b){ //Criando função com parametro "a" e "b"
+            return a + b;
+        }
+        somarInput.textContent = somar(2,7);
+        console.log(somar(2,7));
+
+        //FUNÇÃO CLASSICA
+        const msgTexto = document.getElementById('texto');
+        function saudacao(nome){
+            return `CLASSICA: Olá, ${nome}`;
+        }
+        msgTexto.textContent = saudacao("Leo");
+
+        //FUNÇÃO DE SETA (ARROW FUNCTION)
+        const msgTexto2 = document.getElementById('texto2');
+        const data = (hoje) => `MELHORADA: Hoje é dia ${hoje}`;
+        msgTexto2.textContent = data("06/08/2025");
+
+
+    </script>
+    
+</body>
+</html>
