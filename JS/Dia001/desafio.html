@@ -21,6 +21,10 @@
     <input type="text" id="mensagem" placeholder="Digite uma mensagem...">
     <p id="mostraMensagem"></p>
 
+    <!-- CLICK - EVENTO DE CLICAR EM UM BOTÃO -->
+     <h2>EVENTO DE CLICAR EM UM BOTÃO</h2>
+     <button id="limparCampos">Limpar Campos</button>
+
     <script>
         //FORMULARIO - EVENDO DE ENVIAR FORMULARIO
         const form = document.getElementById('formulario');
@@ -35,10 +39,17 @@
         //KEYUP - EVENTO DE PRESSIONAR UMA TECLA
         const mensagemInput = document.getElementById('mensagem');
         const mostraMensagemInput = document.getElementById('mostraMensagem');
-
         mensagemInput.addEventListener('keyup', function(){
             mostraMensagemInput.textContent = mensagemInput.value;
         });
+
+        //CLICK - EVENTO DE CLICAR EM UM BOTÃO
+        const limparCamposButton = document.getElementById('limparCampos');
+        limparCamposButton.addEventListener('click', function(){
+            nomeImput.value = '';
+            resultado.value = '';
+            mostraMensagemInput.value = '';
+        })
     </script>
 
 </body>
