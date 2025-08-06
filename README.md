@@ -48,4 +48,5 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
 ## JS
   DIA 1: Eventos – click, submit, keyup + addEventListener  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia001  
-    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia001/index.html 
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia001/index.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia001/desafio.html  
