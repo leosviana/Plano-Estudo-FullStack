@@ -40,15 +40,16 @@
         const mensagemInput = document.getElementById('mensagem');
         const mostraMensagemInput = document.getElementById('mostraMensagem');
         mensagemInput.addEventListener('keyup', function(){
-            mostraMensagemInput.textContent = mensagemInput.value;
+        mostraMensagemInput.textContent = mensagemInput.value;
         });
 
         //CLICK - EVENTO DE CLICAR EM UM BOTÃO
         const limparCamposButton = document.getElementById('limparCampos');
         limparCamposButton.addEventListener('click', function(){
             nomeImput.value = '';
-            resultado.value = '';
-            mostraMensagemInput.value = '';
+            resultado.textContent = '';
+            mensagemInput.value = '';
+            mostraMensagemInput.textContent = '';
         })
     </script>
 
