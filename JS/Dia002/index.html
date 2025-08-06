@@ -46,9 +46,11 @@
         //FUNÇÃO DENTRO DE FUNÇÃO (CALLBACK)
         const calculo = document.getElementById('multiplicacao');
         function executarOperacao(a, b, operacao){
-            const resultado = operacao(a, b);            
+            const resultado = operacao(a, b);
+            calculo.textContent = resultado;
         }
-        calculo.textContent = executarOperacao(5, 3, (x, y) => x * y);
+        executarOperacao(5, 3, (x, y) => x * y); // 5 * 3 = 15
+        
 
 
     </script>
