@@ -15,11 +15,12 @@
 
     </form>
     <script>
-        const nome = document.getElementById('nome');
+        const form = document.getElementById('formulario');
+        const nomeImput = document.getElementById('nome');
         const resultado = document.getElementById('resultado');
         form.addEventListener('submit', function(e){
             e.preventDefault();
-            const nome = nome.value;
+            const nome = nomeImput.value;
             resultado.textContent = `Olá ${nome}! Seja bem vindo(a)!`;
         })
     </script>
