@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>DESAFIO</title>
 </head>
 <body>
@@ -10,30 +11,42 @@
     <div class="container">
         <div class="card">
             <p id="titulo1">Produto 1</p>
+            <p id="categoria1">Categoria 1</p>
         </div>
         <div class="card">
             <p id="titulo2">Produto 2</p>
+            <p id="categoria2">Categoria 2</p>
         </div>
         <div class="card">
             <p id="titulo3">Produto 3</p>
+            <p id="categoria3">Categoria 3</p>
         </div>
         <div class="card">
             <p id="titulo4">Produto 4</p>
+            <p id="categoria4">Categoria 4</p>
+        </div>
+        <div class="card">
+            <p id="titulo5">Produto 5</p>
+            <p id="categoria5">Categoria 5</p>
         </div>
     </div>
 
     <script>
-        const produtoTitulo1 = document.getElementById('titulo1');
         const anuncios = [
-            {titulo: "Iphone 14"},
-            {titulo: "Tenis Nike"},
-            {titulo: "Sofá retratil"},
-            {titulo: "Smart TV 50"}
+            {titulo: "Iphone 14", categoria: "eletronicos"},
+            {titulo: "Tenis Nike", categoria: "moda"},
+            {titulo: "Sofá retratil", categoria: "casa"},
+            {titulo: "Smart TV 50", categoria: "eletronicos"},
+            {titulo: "Camisa Polo", categoria: "moda"}
         ]
         anuncios.forEach((item, index) => { //Exibindo os produtos no HTML conforme o array de anuncios
-            const elemento = document.getElementById(`titulo${index + 1}`);
-            if(elemento){
-                elemento.textContent = item.titulo;
+            const produto = document.getElementById(`titulo${index + 1}`);
+            if(produto){
+                produto.textContent = item.titulo;
+            }
+            const categoria = document.getElementById(`categoria${index + 1}`);
+            if(categoria){
+                categoria.textContent = item.categoria;
             }
         })
 
