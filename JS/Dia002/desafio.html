@@ -28,8 +28,10 @@
         <div class="card">
             <p id="titulo5">Produto 5</p>
             <p id="categoria5">Categoria 5</p>
-        </div>
+        </div>        
     </div>
+    <p>Produtos filtrados por categoria:</p>
+    <div id="filtro">Produtos Filtrados</div>
 
     <script>
         const anuncios = [
@@ -48,7 +50,27 @@
             if(categoria){
                 categoria.textContent = item.categoria;
             }
-        })
+        });
+
+        //Função que filtra anuncio por categoria
+        const filtraPorCategoria = (categoria, callback) => {
+            const resultado = anuncios.filter((item) => item.categoria === categoria);
+            callback(resultado);
+        };
+
+        //Função callback que exibe no console
+        const campoFiltro = document.getElementById('filtro');
+        const mostrarFiltro = (lista) => {
+            console.log("Anuncios encontrados!");
+            lista.forEach((item) => {
+                console.log(`📌${item.titulo} - R$${item.categoria}`);
+                campoFiltro.textContent = `📌${item.titulo} - Categoria: ${item.categoria}`;
+            });
+        }
+
+        //Chamada real
+        filtraPorCategoria("eletronicos", mostrarFiltro);
+
 
     </script>
     
