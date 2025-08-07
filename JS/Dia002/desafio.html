@@ -59,10 +59,11 @@
         };
 
         //Função callback que exibe no console
-        const campoFiltro = document.getElementById('filtro');
+        //const campoFiltro = document.getElementById('filtro');
         const mostrarFiltro = (lista) => {
+            const campoFiltro = document.getElementById(`filtro${index + 1}`);
             console.log("Anuncios encontrados!");
-            lista.forEach((item) => {
+            lista.forEach((item, index) => {
                 console.log(`📌${item.titulo} - R$${item.categoria}`);
                 campoFiltro.textContent = `📌${item.titulo} - Categoria: ${item.categoria}`;
             });
