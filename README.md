@@ -50,3 +50,8 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia001  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia001/index.html  
     - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia001/desafio.html  
+
+  DIA 2: Funções – arrow functions, parâmetros, callbacks  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia002  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia002/index.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia002/desafio.html  
