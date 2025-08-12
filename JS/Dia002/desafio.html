@@ -65,8 +65,7 @@
             campoFiltro.textContent = "";
             lista.forEach((item) => {
                 console.log(`📌${item.titulo} - Categoria: ${item.categoria}`);
-                campoFiltro.textContent += `📌${item.titulo} - Categoria: ${item.categoria}\n`;
-                campoFiltro.innerHTML += "----<br>";
+                campoFiltro.innerHTML += `📌${item.titulo} - Categoria: ${item.categoria}\n`;
             });
         }     
 
