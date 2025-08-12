@@ -30,7 +30,7 @@
             <p id="categoria5">Categoria 5</p>
         </div>        
     </div>
-    <p>Produtos filtrados por categoria:</p>
+    <p>Produtos filtrados por categoria "eletronicos":</p>
     <div id="filtro">Produtos Filtrados</div>
 
     <script>
@@ -42,9 +42,9 @@
             {titulo: "Camisa Polo", categoria: "moda"}
         ]
         anuncios.forEach((item, index) => { //Exibindo os produtos no HTML conforme o array de anuncios
-            const produto = document.getElementById(`titulo${index + 1}`);
-            if(produto){
-                produto.textContent = item.titulo;
+            const produto = document.getElementById(`titulo${index + 1}`); //Armazena o titulo do produto
+            if(produto){ 
+                produto.textContent = item.titulo; //Campo de título do html vai conter o título da variável
             }
             const categoria = document.getElementById(`categoria${index + 1}`);
             if(categoria){
@@ -66,13 +66,12 @@
             lista.forEach((item) => {
                 console.log(`📌${item.titulo} - Categoria: ${item.categoria}`);
                 campoFiltro.textContent += `📌${item.titulo} - Categoria: ${item.categoria}\n`;
+                campoFiltro.innerHTML += "<br>";
             });
         }     
 
         //Chamada real
         filtraPorCategoria("eletronicos", mostrarFiltro);
-
-
     </script>
     
 </body>
