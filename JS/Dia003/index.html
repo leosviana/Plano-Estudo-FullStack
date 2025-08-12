@@ -7,13 +7,17 @@
 </head>
 <body>
     <script>
-        //MÉTODO MAP:
+        //MÉTODO MAP() - TRANSFORMANDO UM ARRAY:
         const precos = [100, 200, 300];
         const precosComDesconto = precos.map(precos => precos * 0.9);
-        console.log(precosComDesconto); //90, 180, 270
+        console.log("METODO MAP(): " + precosComDesconto); //90, 180, 270
         //Cada preço foi multiplicado por 0.9 (10% de desconto)
 
-        //MÉTODO FILTER:
+        //MÉTODO FILTER() - FILTRANDO UM ARRAY:
+        const precos2 = [50, 120, 300, 80];
+        const caros = precos2.filter(precos2 => precos2 > 100);
+        consolo.log("METODO FILTER(): " + caros)
+
         
 
     </script>
