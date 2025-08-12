@@ -41,8 +41,9 @@
             {titulo: "Smart TV 50", categoria: "eletronicos"},
             {titulo: "Camisa Polo", categoria: "moda"}
         ]
-        anuncios.forEach((item, index) => { //Exibindo os produtos no HTML conforme o array de anuncios
-            const produto = document.getElementById(`titulo${index + 1}`); //Armazena o titulo do produto
+        //EXIBE OS PRODUTOS EM TELA
+        anuncios.forEach((item, index) => { //Loop que exibe o array de anuncios
+            const produto = document.getElementById(`titulo${index + 1}`); //Armazena o titulo do produto indice 0, 1, 2...
             if(produto){ 
                 produto.textContent = item.titulo; //Campo de título do html vai conter o título da variável
             }
@@ -52,13 +53,15 @@
             }
         });
 
-        //Função que filtra anuncio por categoria
-        const filtraPorCategoria = (categoria, callback) => {
-            const resultado = anuncios.filter((item) => item.categoria === categoria);
+        //FUNÇÃO COM CALLBACK QUE FILTRA OS ANUNCIOS POR CATEGORIA
+        const filtraPorCategoria = (categoria, callback) => { //categoria(Elemento que será usado), callback(outra função)
+            const resultado = anuncios.filter((item) => item.categoria === categoria); 
+            //filter = uma função interna que realiza um filtro
+            //Filtra uma categoria conforme informada
             callback(resultado);
         };
 
-        //Função callback que exibe no console
+        //OUTRA FUNÇÃO CALLBACK - Exibe os elementos encontrados
         const campoFiltro = document.getElementById('filtro');
         const mostrarFiltro = (lista) => {
             console.log("Anuncios encontrados!");

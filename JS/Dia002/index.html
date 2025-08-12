@@ -39,19 +39,20 @@
         msgTexto.textContent = saudacao("Fulano");
 
         //FUNÇÃO DE SETA (ARROW FUNCTION)
+        //Essa função abrevia a função classica. Ficando mais limpo o código.
         const msgTexto2 = document.getElementById('texto2');
         const saudacao2 = (nome2) => `MELHORADA: Olá, ${nome2}`;
         msgTexto2.textContent = saudacao2("Ciclano");
 
         //FUNÇÃO DENTRO DE FUNÇÃO (CALLBACK)
+        //Essa função executa rotinas assincronas, ou seja, fora do tempo.
+        //Não exige interação imediata. As interações são "enviadas" e "recebidas" em momentos diferentes
         const calculo = document.getElementById('multiplicacao');
         function executarOperacao(a, b, operacao){
             const resultado = operacao(a, b);
             calculo.textContent = resultado;
         }
         executarOperacao(5, 3, (x, y) => x * y); // 5 * 3 = 15
-        
-
 
     </script>
     
