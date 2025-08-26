@@ -55,3 +55,8 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia002  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia002/index.html  
     - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia002/desafio.html  
+  
+  DIA 3: Arrays úteis – map, filter, reduce  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia003  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia003/index.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia003/desafio.html  
