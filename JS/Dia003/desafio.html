@@ -20,7 +20,26 @@
             {nome: "fone de ouvido", avaliacoes: [5, 5, 5, 4, 5]},
             {nome: "camera", avaliacoes: [4, 4, 4, 4]}
         ]
-        const mediaNotas = avaliacoes.map(avaliacoes )
+        const produtosComMedia = produto.map((produto) => {
+        const soma = produto.avaliacoes.reduce((total, nota) => total + nota, 0);
+        const media = soma / produtos.avaliacoes.length;
+
+        return{
+            nome: produto.nome,
+            media: media,
+            totalAvaliacoes: produtos.avaliacoes.length
+        };
+    });
+    console.log("Produtos com média calculada: ", produtosComMedia);
+
+    //2. Filtrar apenas os produtos com média >= 4
+    const produtosAprovados = produtoComMedia.filter(produto => produto.media >= 4);
+    console.log("Produtos aprovados (média >= 4): ", produtosAprovados);
+
+    //3. Somar o total de avaliações dos produtos aprovados
+    const totalAvaliacoes = produtosAprovados.reduce((total, produto) => total + produto.totalAvaliacoes, 0);
+    console.log("Total de avaliações dos aprovados: ", totalAvaliacoes);
+
 
     </script>
     
