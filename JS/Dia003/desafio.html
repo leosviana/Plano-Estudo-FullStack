@@ -20,14 +20,14 @@
             {nome: "fone de ouvido", avaliacoes: [5, 5, 5, 4, 5]},
             {nome: "camera", avaliacoes: [4, 4, 4, 4]}
         ]
-        const produtosComMedia = produto.map((produto) => {
+        const produtosComMedia = produtos.map((produto) => {
         const soma = produto.avaliacoes.reduce((total, nota) => total + nota, 0);
-        const media = soma / produtos.avaliacoes.length;
+        const media = soma / produto.avaliacoes.length;
 
         return{
             nome: produto.nome,
             media: media,
-            totalAvaliacoes: produtos.avaliacoes.length
+            totalAvaliacoes: produto.avaliacoes.length
         };
     });
     console.log("Produtos com média calculada: ", produtosComMedia);
