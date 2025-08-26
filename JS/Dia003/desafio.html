@@ -15,30 +15,31 @@
             - Mostrar no console o resultado.
         */
         const produtos = [
-            {nome: "notebook", avaliacoes: [5, 4, 5, 4]},
-            {nome: "celular", avaliacoes: [3, 2, 4]},
-            {nome: "fone de ouvido", avaliacoes: [5, 5, 5, 4, 5]},
-            {nome: "camera", avaliacoes: [4, 4, 4, 4]}
-        ]
+            { nome: "Notebook", avaliacoes: [5, 4, 5, 4] },
+            { nome: "Celular", avaliacoes: [3, 2, 4] },
+            { nome: "Fone de Ouvido", avaliacoes: [5, 5, 5, 4, 5] },
+            { nome: "Câmera", avaliacoes: [4, 4, 4, 4] }
+        ];
+        // 1. Calcular a média das avaliações de cada produto
         const produtosComMedia = produtos.map((produto) => {
         const soma = produto.avaliacoes.reduce((total, nota) => total + nota, 0);
         const media = soma / produto.avaliacoes.length;
-
-        return{
-            nome: produto.nome,
-            media: media,
-            totalAvaliacoes: produto.avaliacoes.length
+        
+        return { 
+            nome: produto.nome, 
+            media: media, 
+            totalAvaliacoes: produto.avaliacoes.length 
         };
-    });
-    console.log("Produtos com média calculada: ", produtosComMedia);
+        });
+        console.log("Produtos com média calculada:", produtosComMedia);
 
-    //2. Filtrar apenas os produtos com média >= 4
-    const produtosAprovados = produtoComMedia.filter(produto => produto.media >= 4);
-    console.log("Produtos aprovados (média >= 4): ", produtosAprovados);
+        // 2. Filtrar apenas os produtos com média >= 4
+        const produtosAprovados = produtosComMedia.filter(produto => produto.media >= 4);
+        console.log("Produtos aprovados (média >= 4):", produtosAprovados);
 
-    //3. Somar o total de avaliações dos produtos aprovados
-    const totalAvaliacoes = produtosAprovados.reduce((total, produto) => total + produto.totalAvaliacoes, 0);
-    console.log("Total de avaliações dos aprovados: ", totalAvaliacoes);
+        // 3. Somar o total de avaliações dos produtos aprovados
+        const totalAvaliacoes = produtosAprovados.reduce((total, produto) => total + produto.totalAvaliacoes, 0);
+        console.log("Total de avaliações dos aprovados:", totalAvaliacoes);
 
 
     </script>
