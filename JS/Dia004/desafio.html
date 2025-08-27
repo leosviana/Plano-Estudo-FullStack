@@ -38,14 +38,14 @@
                 const produtos = await response.json();
                 status.textContent = "✅ Produtos carregados!";
 
-                produtos.slice(0, 5).forEach(produto => {
+                produtos.slice(0, 5).forEach(produto => { //SLICE: Cria um novo array com 5 elementos (índice 0 ao 4), não modifica o array original.
                     const div = document.createElement("div");
-                    div.classList.add("produto");
+                    div.classList.add("produto"); //Chama a criação do elemento "div" adicionando um produto
                     div.innerHTML = `
                         <h2>${produto.title}</h2>
                         <p>${produto.body}</p>
                     `;
-                    lista.appendChild(div);
+                    lista.appendChild(div); //Adiciona o elemento criado dentro da div "lista"
                 });
 
             }catch(error){
