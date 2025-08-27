@@ -59,7 +59,7 @@
                 console.error("Erro ao carregar produto: ", error);
             }
         }
-        carregarProdutos();
+        carregarProdutos().then(() => {/* Terminou */});
         
         
     </script>
