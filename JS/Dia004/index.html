@@ -34,7 +34,7 @@
                 const data = await response.json();
                 consolo.log("Dados recebidos: ", data);
             }catch(error){
-                consolo.error("Erro de requisição: ", error);
+                console.error("Erro de requisição: ", error);
             }
         }
         buscarPost();
