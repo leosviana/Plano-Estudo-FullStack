@@ -60,3 +60,8 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia003  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia003/index.html  
     - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia003/desafio.html  
+
+  DIA 4: Promises e async – fetch(), .then(), .catch(), async/await  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia004  
+    - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia004/index.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia004/desafio.html  
