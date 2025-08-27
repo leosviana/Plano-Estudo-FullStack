@@ -11,6 +11,17 @@
     <p id="status"></p>
     <div id="lista">Produtos vão aparecer aqui</div>
 
+    <p>
+        <br><br>📌 Como funciona<br>
+        O usuário clica no botão → dispara o addEventListener.<br>
+        Mostra "⏳ Carregando produtos..." enquanto busca os dados.<br>
+        O fetch faz a requisição para a API.<br><br>
+        Quando a Promise é resolvida:<br>
+        Converte para JSON.<br>
+        Mostra os 5 primeiros produtos na tela.<br>
+        Se der erro → mostra "❌ Erro ao carregar produtos!".<br>
+    </p>
+
     <script>
         const btn = document.getElementById("btnCarregar");
         const lista = document.getElementById("lista");
