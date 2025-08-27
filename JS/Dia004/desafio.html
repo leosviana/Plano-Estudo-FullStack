@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 004</title>
+</head>
+<body>
+    <h1>Marketplace</h1>
+    <button id="btnCarregar">Carregar...</button>
+    <p id="status"></p>
+    <div id="lista">Produtos vão aparecer aqui</div>
+
+    <script>
+        const btn = document.getElementById("btnCarregar");
+        const lista = document.getElementById("lista");
+        const status = document.getElementById("status");
+
+        btn.addEventListener("click", async () => {
+            status.textContent = "⏳ Carregando produtos...";
+            lista.innerHTML = "";
+
+            try{
+                const response = await fetch("http://jsonplaceholder.typicode.com/posts");
+                if(!response.ok) throw new Error("Erro ao buscar produtos");
+
+                const produtos = await response.json();
+                status.textContent = "✅ Produtos carregados!";
+
+                produtos.slice(0, 5).forEach(produto => {
+                    const div = document.createElement("div");
+                    div.classList.add("produto");
+                    div.innerHTML = `
+                        <h2>${produto.title}</h2>
+                        <p>${produto.body}</p>
+                    `;
+                    lista.appendChild(div);
+                });
+
+            }catch(error){
+                status.textContent = "❌ Erro ao carregar produtos!";
+                console.error(error);
+            }
+        });
+    </script>
+    
+</body>
+</html>
