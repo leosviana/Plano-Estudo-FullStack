@@ -53,7 +53,7 @@
                     console.log(`Produto ${produto.title}`);
                 });
             }catch(error){
-                console.log("Erro ao carregar produto: ", error);
+                console.error("Erro ao carregar produto: ", error);
             }
         }
         carregarProdutos();
