@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises e async</title>
+</head>
+<body>
+    <script>
+        //Promise - É uma promessa da vida real. Algo que vai acontecer no futuro (mas ainda não aconteceu)
+        //Ele tem 3 estados:
+        // - pending(pendente)
+        // - fulfilled(cumprida -> sucesso)
+        // - rejected(rejeitada -> erro)
+
+        //Usando fetch(), .then() e .catch()
+        //Fetch é usado para buscar dados da API(servidor). Ele retorna uma Promise.
+        fetch("http://jsonplaceholder.typicode.com/post/1") //Simula uma API
+            .then(data => {
+                console.log("Dados recebidos: ", data); //Sucesso                
+            })
+            .catch(error => {
+                console.log("Ocorreu um erro: ", error); //Erro
+            });
+    </script>
+    
+</body>
+</html>
