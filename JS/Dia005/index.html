@@ -29,7 +29,7 @@
             resultado.innerHTML = "";
 
             try{
-                const response = awai fetch(`https://pokeaoi.co/api/v2/pokemon/${nome}`);
+                const response = await fetch(`https://pokeaoi.co/api/v2/pokemon/${nome}`);
                 if (!response.ok) throw new Error("Pokemon não encontrado");
                 const pokemon = await response.json();
                 status.textContent = "✅ Encontrado!";
