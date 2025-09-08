@@ -6,20 +6,20 @@
     <title>Buscar dados de uma API</title>
 </head>
 <body>
-    <h1>Pokedex</h1>
+    <h1>Teste</h1>
     <input type="text" id="nomePokemon">
     <button id="btnBuscar">Buscar</button>
     <p id="status"></p>
     <div id="resultado"></div>
 
     <script>
-        const input = document.getElementByid("nomePokemon");
-        const btn = document.getElementById("btnBuscar");
-        const status = document.getElementById("status");
-        const resultado = document.getElementById("resultado");
+        const input = document.getElementByid("nomePokemon"); //Captura o campo do HTML e armazena em uma var do JS
+        const btn = document.getElementById("btnBuscar"); //Captura o campo do HTML e armazena em uma var do JS
+        const status = document.getElementById("status"); //Captura o campo do HTML e armazena em uma var do JS
+        const resultado = document.getElementById("resultado"); //Captura o campo do HTML e armazena em uma var do JS
 
-        btn.addEventListener("click", async() => {
-            const nome = input.value.toLowerCase().trim();
+        btn.addEventListener("click", async() => { //Utilizando o evento de click do botão buscar
+            const nome = input.value.toLowerCase().trim(); 
             if(!nome){
                 status.textContent = "❌ Digite o nome do pokemon!";
                 return;
