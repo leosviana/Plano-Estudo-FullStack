@@ -6,44 +6,47 @@
     <title>Buscar dados de uma API</title>
 </head>
 <body>
+    <!-- ESTRUTURA HTML -->
     <h1>Teste</h1>
     <input type="text" id="nomePokemon">
     <button id="btnBuscar">Buscar</button>
     <p id="status"></p>
     <div id="resultado"></div>
 
-    <script>
+    <!-- SCRIPT JS -->
+    <script> 
         const input = document.getElementById("nomePokemon"); //Captura o campo do HTML e armazena em uma var do JS
         const btn = document.getElementById("btnBuscar"); //Captura o campo do HTML e armazena em uma var do JS
         const status = document.getElementById("status"); //Captura o campo do HTML e armazena em uma var do JS
         const resultado = document.getElementById("resultado"); //Captura o campo do HTML e armazena em uma var do JS
 
         btn.addEventListener("click", async() => { //Utilizando o evento de click do botão buscar
-            const nome = input.value.toLowerCase().trim(); 
-            if(!nome){
-                status.textContent = "❌ Digite o nome do pokemon!";
+            const nome = input.value.toLowerCase().trim(); //Converter tudo em caracter minúsculo + retira os espaços do texto
+            if(!nome){ //Se caso não existir o nome
+                status.textContent = "❌ Digite o nome do pokemon!"; //Exibe a mensagem de erro
                 return;
             }
 
-            status.textContent = "⏳ Buscando...";
-            resultado.innerHTML = "";
+            status.textContent = "⏳ Buscando..."; //Status para buscar na api
+            resultado.innerHTML = ""; //Exibe o resultado no HTML no campo "resultado"
 
             try{
-                const response = await fetch(`https://pokeaoi.co/api/v2/pokemon/${nome}`);
-                if (!response.ok) throw new Error("Pokemon não encontrado");
-                const pokemon = await response.json();
-                status.textContent = "✅ Encontrado!";
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${nome}`); //Acessando API do pokemon
+                if (!response.ok) throw new Error("Pokemon não encontrado"); //Se não encontrar, exibe o erro
+                const pokemon = await response.json(); //Capturando informações do pokemon por JSON
+                status.textContent = "✅ Encontrado!"; //Caso encontre, mostre o status de resposta ok
 
-                resultado.innerHTML = `
+                //Exibindo o resultado do polemon no HTML por uma div
+                resultado.innerHTML = ` 
                     <div class="pokemon">
                         <h2>${pokemon.name.toUpperCase()}<h2>
                         <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}">
                         <p><strong>Tipo(s):</strong> ${pokemon.type.map(t => t.type.name).join(", ")}</p>
                     </div>
                 `
-            }catch(error){
-                status.textContent = "❌ Pokemon não encontrado!";
-                console.error(error);
+            }catch(error){ //Caso ocorra erro
+                status.textContent = "❌ Pokemon não encontrado!"; //Exibe a mensagem de erro
+                console.error(error); //Exibe o erro no console (F12)
             }
         });
     </script>
