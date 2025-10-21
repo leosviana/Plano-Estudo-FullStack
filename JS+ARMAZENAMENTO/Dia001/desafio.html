@@ -34,6 +34,13 @@
             //Salva o último vídeo assistido no LocalStorage
             localStorage.setItem("ultimoVideo", videoID);
         });
-    </script>    
+    </script>
+
+    <!-- O QUE O CÓDIGO FAZ? -->
+    <!-- 1. O <selec> tem 3 vídeos (IDs do Youtube)  -->
+    <!-- 2. Quando o usuário escolhe um e clica "Assistir", o vídeo aparece num <iframe> -->
+    <!-- 3. O ID do vídeo é salvo no LocalStorage com a chave "ultimoVideo" -->
+    <!-- 4. Se o usuário sair e voltar depois, o JS pega o vídeo salvo e carrega automaticamente no palyer! -->
+    <!-- É o mesmo principio de sites como o youtube ou netflix que lembram onde você parou de assistir -->
 </body>
 </html>
