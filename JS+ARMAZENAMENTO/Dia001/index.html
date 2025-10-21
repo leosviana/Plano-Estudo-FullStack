@@ -7,6 +7,25 @@
 </head>
 <body>
     <h2>LocalStorage e SessionStorage – guardar e recuperar dados simples</h2>
+
+<script>
+    //SINTAXE BASE
+    //Salvar um dado:
+    localStorage.setItem("cahve", "valor");
+    //Recuperar um dado:
+    let valor = localStorage.getItem("chave");
+    //Apagar um dado específico:
+    localStorage.removeItem("chave");
+    //Limpar tudo:
+    localStorage.clear();
+
+    //Se quiser guardar objetos ou arrays, converta com:
+    localStorage.setItem("usuario", JSON.stringify({nome: "João", idade: 25}));
+    //Recupere depois com:
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    localStorage.getItem(usuario.nome); //João
+    localStorage.getItem(usuario.idade); //25
+</script>
     
 </body>
 </html>
