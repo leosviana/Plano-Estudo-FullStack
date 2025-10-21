@@ -19,6 +19,7 @@
         const btnLimpar = document.getElementById("limpar");
 
         //Verifica se há algum nome salvo
+        const nomeSalvo = localStorage.getItem("nome");
         if(nomeSalvo){
             mensagem.textContent = `Bem-vindo de volta, ${nomeSalvo}`;
         }
