@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Player YouTube</title>
+</head>
+<body>
+    <h1>🎬Mini Player YouTube</h1>
+    <select id="videoSelect">
+        <option value="dQw4w9WgXcQ">Música 1</option>
+        <option value="9bZkp7q19f0">Música 2</option>
+        <option value="3JZ_D3ELwOQ">Música 3</option>
+    </select>
+    <button id="assistir">Assistir</button>
+    <div id="player"></div>
+
+    <script>
+        const select = document.getElementById("videoSelect");
+        const btn = document.getElementById("assistir");
+        const player = document.getElementById("player");
+
+        //Se já há um vídeo salvo, carrega ele automaticamente:
+        const ultimoVideo = localStorage.getItem("ultimoVideo");
+        if(ultimoVideo){
+            player.innerHTML = `<iframe src="http://www.youtube.com/embed/${ultimoVideo}" allowfullscreen></iframe>`;
+        }
+
+        //Ao clicar em assistir:
+        btn.addEventListener("click", () => {
+            const videoID = select.value;
+            //Renderiza o player
+            player.innerHTML = `<iframe src="http://youtube.com/embed/${videoID}" allowfullscreen></iframe>`;
+            //Salva o último vídeo assistido no LocalStorage
+            localStorage.setItem("ultimoVideo", videoID);
+        });
+    </script>    
+</body>
+</html>
