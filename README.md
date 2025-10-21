@@ -72,7 +72,7 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
 
 ## JS + ARMAZENAMENTO + MÓDULOS
   Dia 1: LocalStorage e SessionStorage – guardar e recuperar dados simples  
-    - ARQUIVOS: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS%2BARMAZENAMENTO/Dia001  
     - EXEMPLO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/index.html  
     - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/exercicio.html  
     - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/desafio.html  
