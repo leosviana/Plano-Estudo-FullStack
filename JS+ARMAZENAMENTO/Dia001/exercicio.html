@@ -19,7 +19,27 @@
         const btnLimpar = document.getElementById("limpar");
 
         //Verifica se há algum nome salvo
-        
+        if(nomeSalvo){
+            mensagem.textContent = `Bem-vindo de volta, ${nomeSalvo}`;
+        }
+
+        //Salvar nome
+        btnSalvar.addEventListener("click", () => {
+            const nome = nomeInput.value.trim();
+            if(nome){
+                localStorage.setItem("nome", nome);
+                mensagem.textContent = `✅ Nome "${nome} salvo!"`;
+                nomeImput.value = "";
+            }else{
+                mensagem.textContent = "❌ Digite um nome válido!";
+            }
+        });
+
+        //Limpar storage
+        btnLimpar.addEventListener("click", () => {
+            localStorage.removeItem("nome");
+            mensagem.textContent = "🧹 Nome apagado do armazenamento!";
+        })
     </script>
     
 </body>
