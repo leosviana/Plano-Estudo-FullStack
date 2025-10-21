@@ -69,3 +69,10 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
   DIA 5: Projeto – buscar dados de uma API pública  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS/Dia005  
     - FINALIZADO: https://leosviana.github.io/Plano-Estudo-FullStack/JS/Dia005/index.html  
+
+## JS + ARMAZENAMENTO + MÓDULOS
+  Dia 1: LocalStorage e SessionStorage – guardar e recuperar dados simples  
+    - ARQUIVOS: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001  
+    - EXEMPLO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/index.html  
+    - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/exercicio.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/desafio.html  
