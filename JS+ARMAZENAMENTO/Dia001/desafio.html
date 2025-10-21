@@ -23,14 +23,14 @@
         //Se já há um vídeo salvo, carrega ele automaticamente:
         const ultimoVideo = localStorage.getItem("ultimoVideo");
         if(ultimoVideo){
-            player.innerHTML = `<iframe src="http://www.youtube.com/embed/${ultimoVideo}" allowfullscreen></iframe>`;
+            player.innerHTML = `<iframe src="https://www.youtube.com/embed/${ultimoVideo}" allowfullscreen></iframe>`;
         }
 
         //Ao clicar em assistir:
         btn.addEventListener("click", () => {
             const videoID = select.value;
             //Renderiza o player
-            player.innerHTML = `<iframe src="http://youtube.com/embed/${videoID}" allowfullscreen></iframe>`;
+            player.innerHTML = `<iframe src="https://youtube.com/embed/${videoID}" allowfullscreen></iframe>`;
             //Salva o último vídeo assistido no LocalStorage
             localStorage.setItem("ultimoVideo", videoID);
         });
