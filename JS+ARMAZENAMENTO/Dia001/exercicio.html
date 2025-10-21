@@ -26,7 +26,7 @@
 
         //Salvar nome
         btnSalvar.addEventListener("click", () => {
-            const nome = nomeInput.value.trim();
+            const nome = nomeImput.value.trim();
             if(nome){
                 localStorage.setItem("nome", nome);
                 mensagem.textContent = `✅ Nome "${nome} salvo!"`;
