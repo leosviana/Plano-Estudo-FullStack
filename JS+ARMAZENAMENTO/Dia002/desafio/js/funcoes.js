@@ -1,3 +1,5 @@
-export function media(a, b, c){
-    return (a + b + c) / 3;
+export function verificarAprovacao(media){
+    return media >= 7 ? "Aprovado ✅" : "Reprovado ❌";
 }
+
+export const formatarNota = (nota) => nota.toFixed(1);
