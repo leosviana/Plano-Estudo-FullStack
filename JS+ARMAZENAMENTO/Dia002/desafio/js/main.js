@@ -8,7 +8,7 @@ const aluno = [
 ];
 
 //Percorre cada aluno e mostra o resultado
-aluno.forEarch(aluno => {
+alunos.forEarch(aluno => {
     const media = aluno.media();
     const status = verificarAprovacao(media);
 
