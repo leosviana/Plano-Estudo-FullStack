@@ -1,5 +1,5 @@
-import {verificarAprovacao, formatarNota} from "./funcoes.js"
-import {alunos} from "./alunos.js"
+import {verificarAprovacao, formatarNota} from "./funcoes.js";
+import Aluno from "./alunos.js";
 
 const aluno = [
     new Alunos("Ana", [8, 7.5, 9]),
