@@ -8,9 +8,9 @@ const alunos = [
 ];
 
 //Percorre cada aluno e mostra o resultado
-alunos.forEarch(aluno => {
-    const media = aluno.media();
-    const status = verificarAprovacao(media);
+alunos.forEach(aluno => {
+  const media = aluno.media();
+  const status = verificarAprovacao(media);
 
-    console.log(`${aluno.nome}: Média = ${formatarNota(media)} -> ${status}`);
+  console.log(`${aluno.nome}: Média = ${formatarNota(media)} → ${status}`);
 });
