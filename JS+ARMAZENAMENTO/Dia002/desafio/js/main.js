@@ -1,4 +1,4 @@
-import {funcoes} from "./funcoes.js"
+import {verificarAprovacao, formatarNota} from "./funcoes.js"
 import {alunos} from "./alunos.js"
 
 const aluno = [
