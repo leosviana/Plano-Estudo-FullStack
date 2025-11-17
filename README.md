@@ -77,7 +77,7 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/exercicio/index.html  
     - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia001/desafio/index.html  
 
-  Dia 2: Dia 2: Módulos – import/export, estruturar código JS em arquivos separados.  
+  Dia 2: Módulos – import/export, estruturar código JS em arquivos separados.  
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS%2BARMAZENAMENTO/Dia002  
     - EXEMPLO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia002/explicacao/index.html  
     - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia002/exercicio/index.html  
