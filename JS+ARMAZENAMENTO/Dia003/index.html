@@ -82,6 +82,23 @@
         console.log(pessoa1.apresentar());
 
         //3. THIS - Exemplo de objeto usando "this"
+        class Produto{
+            constructor(nome, preco){
+                this.nome = nome;
+                this.preco = preco;
+            }
+            desconto(percentual){
+                this.preco = this.preco - (this.preco * (percentual / 100));
+                return this;
+            }
+            exibir(){
+                console.log(`Produto: ${this.nome} - Preço: ${this.preco.toFixed(2)}`);
+                return this;
+            }
+        }
+        console.log("3. THIS:");
+        const p1 = new Produto("Notebook", 4000);
+        p1.exibir().desconto(10).exibir();
 
     </script>
     
