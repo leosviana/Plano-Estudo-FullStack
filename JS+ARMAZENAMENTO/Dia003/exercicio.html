@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema De Loja (Simples)</title>
+</head>
+<body>
+    <h3>SISTEMA DE LOJA(SIMPLES)</h3>
+
+    <script>
+    class Loja{
+        constructor(){
+            this.produtos = [];
+        }        
+        adicionarProdutos(nome, preco){
+            this.produtos.push({nome, preco});
+            return this;
+        }
+        aplicarDesconto(percentual){
+            this.produtos = this.produtos.map(p =>({
+                nome: p.nome,
+                preco: p.preco - (p.preco * percentual / 100)
+            }));
+            return this;
+        }
+        listarProdutos(){
+            console.log("📦 Produtos na loja: ");
+            this.produtos.forEach(p => console.log(`- ${p.nome}: R$ ${p.preco.toFixed(2)}`));
+            return this;
+        }
+        total(){
+            const soma = this.produtos.reduce((acc, p) => acc + p.preco, 0);
+            console.log(`💰 Total da compra: R$ ${soma.toFixed(2)}`);
+            return this;
+        }
+    }
+    const loja = new Loja();
+    loja 
+        .adicionarProduto("Celular", 2000)
+        .adicionarProduto("Fone Bluetooth", 300)
+        .listarProdutos()
+        .aplicarDesconto(10)
+        .listarProdutos()
+        .total();
+    </script>
+    
+</body>
+</html>
