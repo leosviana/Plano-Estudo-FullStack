@@ -82,3 +82,8 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - EXEMPLO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia002/explicacao/index.html  
     - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia002/exercicio/index.html  
     - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia002/desafio/index.html  
+
+  Dia 3: Objeto mais profundo – classes, métodos, this, encadeamentos.  
+    - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS%2BARMAZENAMENTO/Dia003  
+    - EXEMPLO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia003/index.html  
+    - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia003/exercicio.html  
