@@ -6,7 +6,7 @@
     <title>Dia 003</title>
 </head>
 <body>
-    <h3>OBJETO</h3>
+    <h3>1. OBJETO</h3>
     <p>Um objeto é como uma caixa que guarda informações(propriedades) e ações(métodos)</p>
     <p>
         const carro={<br>
@@ -18,7 +18,7 @@
         };<br>
     </p>
 
-    <h3>CLASSES</h3>
+    <h3>2. CLASSES</h3>
     <p>As classes é como uma fábrica para criar objetos parecidos. Ele define os atributos e métodos que todos os objetos terão.</p>
     <p>
         class Pessoa{<br>
@@ -34,8 +34,28 @@
         console.log(pessoa1.apresentar());
     </p>
 
+    <h3>3. THIS</h3>
+    <p>"THIS" é uma palavra especial que aponta para o próprio objeto onde o código está sendo executado.</p>
+    <p>
+        class Produto{ <br>
+            constructor(nome, preco){ <br>
+                this.nome = nome; <br>
+                this.preco = preco; <br>
+            } <br>
+            desconto(percentual){ <br>
+                this.preco = this.preco - (this.preco * (percentual / 100)); <br>
+                return this; //permite encadeamento <br>
+            } <br>
+            exibir(){ <br>
+                console.log(`Produto: ${this.nome} - Preço: ${this.preco.toFixed(2)}`); <br>
+            } <br>
+        } <br>
+        const p1 = new Produto("Notebook", 4000); <br>
+        p1.exibir().desconto(10).exibir(); //Metodo encadeado (method chaining) <br>
+    </p>
+
     <script>
-        //Exemplo de um objeto pronto:
+        //1. OBJETO - Exemplo de um objeto pronto:
         const carro ={
             marca: "Tesla",
             modelo: "Model 3",
@@ -45,7 +65,7 @@
         };
         carro.acelerar(); //"O carro está acelerando..."
 
-        //Exemplo de classe pronto:
+        //2. CLASSE - Exemplo de classe pronto:
         class Pessoa{
             constructor(nome, idade){
                 this.nome = nome;
