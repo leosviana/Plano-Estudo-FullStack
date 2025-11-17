@@ -16,6 +16,7 @@
                 console.log("O carro está acelerando...");<br>
             }<br>
         };<br>
+        >>>APERTE [F12] PARA VER O RESULTADO
     </p>
 
     <h3>2. CLASSES</h3>
@@ -60,6 +61,7 @@
             marca: "Tesla",
             modelo: "Model 3",
             acelerar(){
+                console.log("1. OBJETO:")
                 console.log("O carro está acelerando...");
             }
         };
@@ -74,9 +76,13 @@
             apresentar(){
                 return `Olá, Meu nome é ${this.nome} e tenho ${this.idade} anos.`;
             }
-        }        
+        }    
+        console.log("2. CLASSE:")    
         const pessoa1 = new Pessoa("Ana", 25);
         console.log(pessoa1.apresentar());
+
+        //3. THIS - Exemplo de objeto usando "this"
+
     </script>
     
 </body>
