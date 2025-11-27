@@ -36,7 +36,7 @@ export default class Canal{
     }
 
     buscarVideoPorTermo(termo){
-        const filtrado = this.videos.filter(v => v.titulo.toLowerCase().includes(termo.toLowerCase()));
+        const filtrados = this.videos.filter(v => v.titulo.toLowerCase().includes(termo.toLowerCase()));
         console.log(`🔎 Busca por: "${termo}": `);
         filtrados.forEach(v => console.log(" - " + v.info()));
         return this;
