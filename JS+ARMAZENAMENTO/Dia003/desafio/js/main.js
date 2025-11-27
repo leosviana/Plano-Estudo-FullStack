@@ -8,4 +8,4 @@ canal
   .adicionarVideo("CSS Flexbox completo", 30500, 3300, "2023-10-01")
   .listarVideos()
   .estatisticas()
-  .buscarVideosPorTermo("api");
+  .buscarVideoPorTermo("api");
