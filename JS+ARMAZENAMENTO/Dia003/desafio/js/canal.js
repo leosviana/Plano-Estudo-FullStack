@@ -7,10 +7,10 @@ export default class Canal{
         this.videos = [];
     }
 
-    adicionarVideo(){
-        console.log(`Vídeos do canal ${this.nome}:`);
-        this.videos.forEach(v => console.log(" - " + v.info()));
-        return this;
+    adicionarVideo(titulo, views, likes, publicadoEm) {
+        const video = new Video(titulo, views, likes, publicadoEm);
+        this.videos.push(video);
+        return this; // permite encadeamento
     }
 
     listarVideos(){

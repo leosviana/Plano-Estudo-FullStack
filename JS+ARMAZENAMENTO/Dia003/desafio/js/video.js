@@ -8,6 +8,6 @@ export default class Video{
 
     //Transforma a data em texto amigável:
     info(){
-        return `${this.titulo} - ${this.views} - 👍${this.likes} - Publicado em: ${this.publicadoEm}`;
+        return `${this.titulo} - ${this.views} views - 👍${this.likes} - Publicado em: ${this.publicadoEm}`;
     }
 }
