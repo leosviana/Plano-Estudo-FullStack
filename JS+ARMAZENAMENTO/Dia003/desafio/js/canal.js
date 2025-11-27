@@ -8,7 +8,7 @@ export default class Canal{
     }
 
     adicionarVideo(titulo, views, likes, publicadoEm) {
-        const video = new Video(titulo, views, likes, publicadoEm);
+        const videos = new Video(titulo, views, likes, publicadoEm);
         this.videos.push(video);
         return this; // permite encadeamento
     }
