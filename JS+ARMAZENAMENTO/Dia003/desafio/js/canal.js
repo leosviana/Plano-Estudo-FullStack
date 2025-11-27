@@ -1,4 +1,4 @@
-import video from video.js;
+import Video from "./video.js";
 
 export default class Canal{
     constructor(nome, inscritos){
