@@ -7,5 +7,5 @@ canal
     .adicionarVideo("HTML para iniciantes", 48000, 6000, "2023-09-15");
     .adicionarVideo("CSS Flexbox completo", 30500, 3300, "2023-10-01");
     .listarVideos();    
-    .estatisticas()
+    .estatisticas();
     .buscarVideoPorTermo("api");
