@@ -13,6 +13,12 @@ export default class Canal{
         return this;
     }
 
+    listarVideos(){
+        console.log(`Vídeos do canal ${this.nome}:`);
+        this.videos.forEach(v => console.log(" - ", v.info()));
+        return this;
+    }
+
     estatisticas(){
         const totalViews = this.videos.reduce((acc, v) => acc + v.views, 0);
         const totalLikes = this.videos.reduce((acc, v) => acc + v.likes, 0);
