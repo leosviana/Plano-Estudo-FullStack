@@ -1,4 +1,4 @@
-import canal from "./canal.js";
+import Canal from "./canal.js";
 
 const canal = new Canal("Leo Dev", 12400);
 
