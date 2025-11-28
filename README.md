@@ -87,3 +87,4 @@ Aqui estarei depositando todo aprendizado para ser um desenvolvedor fullstack.
     - ARQUIVOS: https://github.com/leosviana/Plano-Estudo-FullStack/tree/main/JS%2BARMAZENAMENTO/Dia003  
     - EXEMPLO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia003/index.html  
     - EXERCÍCIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia003/exercicio.html  
+    - DESAFIO: https://leosviana.github.io/Plano-Estudo-FullStack/JS%2BARMAZENAMENTO/Dia003/desafio/index.html  
